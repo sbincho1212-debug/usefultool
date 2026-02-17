@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>파이어족 계산기 - 머니칼크</title>
+  <meta name="description" content="경제적 자유를 위한 은퇴 자금과 기간을 계산해 드립니다. FIRE Number를 확인하세요.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>🔥 파이어족(FIRE) 은퇴 계산기</h1>
+    <p>조기 은퇴를 위해 필요한 자산(FIRE Number)과 은퇴까지 걸리는 시간을 알아보세요.</p>
+    
+    <div class="calc-container">
+      <form id="fire-form">
+        <div class="input-group">
+          <label for="current-age">현재 나이 (세)</label>
+          <input type="number" id="current-age" placeholder="30" value="30">
+        </div>
+        <div class="input-group">
+          <label for="annual-expense">연간 지출액 (원)</label>
+          <input type="number" id="annual-expense" placeholder="40000000" value="40000000">
+        </div>
+        <div class="input-group">
+          <label for="current-net-worth">현재 순자산 (원)</label>
+          <input type="number" id="current-net-worth" placeholder="50000000" value="50000000">
+        </div>
+        <div class="input-group">
+          <label for="annual-savings">연간 저축액 (원)</label>
+          <input type="number" id="annual-savings" placeholder="20000000" value="20000000">
+        </div>
+        <div class="input-group">
+          <label for="return-rate">예상 연 수익률 (%)</label>
+          <input type="number" id="return-rate" step="0.1" placeholder="7" value="7">
+        </div>
+        <div class="input-group">
+          <label for="withdrawal-rate">안전 인출률 (%)</label>
+          <input type="number" id="withdrawal-rate" step="0.1" placeholder="4" value="4">
+        </div>
+        <button type="submit" class="btn btn-primary">계산하기</button>
+      </form>
+      
+      <div id="fire-result" class="result-area">
+        <h3>계산 결과</h3>
+        <p>왼쪽 정보를 입력하면 은퇴 목표 자산과 예상 기간이 표시됩니다.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>파이어족(FIRE)이란?</h2>
+       <p>FIRE(Financial Independence, Retire Early)는 경제적 자립을 이루어 조기에 은퇴하려는 사람들을 말합니다. 일반적으로 4%의 룰에 따라 연간 지출액의 25배를 모으면, 자산의 수익만으로 평생 생활이 가능하다고 봅니다.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>

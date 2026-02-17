@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배당 수익 계산기 - 머니칼크</title>
+  <meta name="description" content="투자 금액과 배당 수익률을 기반으로 예상되는 월 배당금과 연 배당금을 계산해 드립니다.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>🥉 배당 수익 계산기</h1>
+    <p>투자 금액과 배당 수익률을 기반으로 예상되는 배당 수익을 확인하세요.</p>
+    
+    <div class="calc-container">
+      <form id="dividend-form">
+        <div class="input-group">
+          <label for="investment-amount">총 투자 금액 (원)</label>
+          <input type="number" id="investment-amount" placeholder="10000000" value="10000000">
+        </div>
+        <div class="input-group">
+          <label for="dividend-yield">연 배당 수익률 (%)</label>
+          <input type="number" id="dividend-yield" step="0.1" placeholder="3.5" value="3.5">
+        </div>
+        <button type="submit" class="btn btn-primary">계산하기</button>
+      </form>
+      
+      <div id="dividend-result" class="result-area">
+        <h3>계산 결과</h3>
+        <p>투자 금액과 배당 수익률을 입력해 주세요.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>배당금이란 무엇인가요?</h2>
+       <p>배당금(Dividend)은 기업이 주주들에게 나눠주는 이익의 일부입니다. 주식이나 ETF에 투자하면 시세 차익뿐만 아니라, 정기적으로 지급되는 배당금을 통해 현금 흐름을 창출할 수 있습니다. 특히 월 배당 ETF나 고배당주는 은퇴 후 생활비 마련에 유용합니다.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>

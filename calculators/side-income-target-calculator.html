@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>부업 목표 달성 계산기 - 머니칼크</title>
+  <meta name="description" content="블로그, 유튜브, 스마트스토어 등 부업으로 목표 수익을 얻기 위해 필요한 트래픽과 판매량을 계산합니다.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>🚀 부업 목표 달성 계산기</h1>
+    <p>블로그 애드센스, 유튜브, 스마트스토어 등 부업으로 월 수익을 달성하기 위한 구체적인 목표를 세워보세요.</p>
+    
+    <div class="calc-container">
+      <form id="side-income-form">
+        <div class="input-group">
+          <label for="monthly-income-goal">목표 월 수익 (원)</label>
+          <input type="number" id="monthly-income-goal" placeholder="500000" value="500000">
+        </div>
+        <div class="input-group">
+          <label for="rpm">평균 RPM / CPM (1000회당 수익, 원)</label>
+          <input type="number" id="rpm" step="0.1" placeholder="5000" value="5000">
+        </div>
+        <div class="input-group">
+          <label for="conversion-rate">또는 구매 전환율 (%)</label>
+          <input type="number" id="conversion-rate" step="0.1" placeholder="1" value="1">
+        </div>
+        <div class="input-group">
+          <label for="product-price">제품 단가 (원)</label>
+          <input type="number" id="product-price" placeholder="20000" value="20000">
+        </div>
+        <button type="submit" class="btn btn-primary">계산하기</button>
+      </form>
+      
+      <div id="side-income-result" class="result-area">
+        <h3>계산 결과</h3>
+        <p>왼쪽 정보를 입력하면 필요한 방문자 수나 판매량이 계산됩니다.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>트래픽을 수익으로</h2>
+       <p>디지털 노마드를 꿈꾸시나요? 막연히 "열심히 하면 되겠지"보다는, "월 100만원을 벌려면 하루 2,000명이 와야 하는구나"와 같이 구체적인 숫자를 목표로 삼는 것이 훨씬 효과적입니다. RPM(1000회 노출당 수익)이나 전환율을 기반으로 현실적인 목표를 설정해 보세요.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>

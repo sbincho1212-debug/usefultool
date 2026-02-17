@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>적금 목표 달성 계산기 - 머니칼크</title>
+  <meta name="description" content="목표 금액을 모으기 위해 얼마나 걸릴지 계산해 드립니다. 매월 저축액과 이자율을 입력하세요.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>💰 적금 목표 달성 계산기</h1>
+    <p>매월 일정 금액을 저축하면 목표 금액까지 얼마나 걸릴지 계산해 보세요.</p>
+    
+    <div class="calc-container">
+      <form id="savings-goal-form">
+        <div class="input-group">
+          <label for="goal-amount">목표 저축 금액 (원)</label>
+          <input type="number" id="goal-amount" placeholder="10000000" value="10000000">
+        </div>
+        <div class="input-group">
+          <label for="monthly-saving">매월 저축액 (원)</label>
+          <input type="number" id="monthly-saving" placeholder="500000" value="500000">
+        </div>
+        <div class="input-group">
+          <label for="interest-rate">연 이자율 (%)</label>
+          <input type="number" id="interest-rate" step="0.1" placeholder="2.5" value="2.5">
+        </div>
+        <button type="submit" class="btn btn-primary">계산하기</button>
+      </form>
+      
+      <div id="savings-goal-result" class="result-area">
+        <h3>계산 결과</h3>
+        <p>목표와 저축액을 입력하면 기간이 계산됩니다.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>저축 습관의 힘</h2>
+       <p>목표를 세우고 매달 꾸준히 저축하는 습관은 재테크의 기본입니다. 이 계산기를 통해 "언제쯤 내가 원하는 금액을 모을 수 있을까?"라는 질문에 대한 답을 찾아보세요.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>

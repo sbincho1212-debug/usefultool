@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대출 이자 비교 계산기 - 머니칼크</title>
+  <meta name="description" content="두 가지 대출 상품의 이자 비용을 비교하여 더 유리한 선택을 하세요.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>⚖️ 대출 이자 비교 계산기</h1>
+    <p>두 가지 대출 상품을 비교하여 어떤 것이 더 유리한지 확인하세요.</p>
+    
+    <div class="calc-container">
+      <form id="loan-comparison-form">
+        <h3>대출 상품 A</h3>
+        <div class="input-group">
+          <label for="loan-amount-a">대출 금액 (원)</label>
+          <input type="number" id="loan-amount-a" placeholder="100000000" value="100000000">
+        </div>
+        <div class="input-group">
+          <label for="interest-rate-a">금리 (연 %)</label>
+          <input type="number" id="interest-rate-a" step="0.1" placeholder="5" value="5">
+        </div>
+        <div class="input-group">
+          <label for="loan-term-a">대출 기간 (년)</label>
+          <input type="number" id="loan-term-a" placeholder="30" value="30">
+        </div>
+
+        <h3>대출 상품 B</h3>
+        <div class="input-group">
+          <label for="loan-amount-b">대출 금액 (원)</label>
+          <input type="number" id="loan-amount-b" placeholder="100000000" value="100000000">
+        </div>
+        <div class="input-group">
+          <label for="interest-rate-b">금리 (연 %)</label>
+          <input type="number" id="interest-rate-b" step="0.1" placeholder="4.5" value="4.5">
+        </div>
+        <div class="input-group">
+          <label for="loan-term-b">대출 기간 (년)</label>
+          <input type="number" id="loan-term-b" placeholder="30" value="30">
+        </div>
+        <button type="submit" class="btn btn-primary">비교하기</button>
+      </form>
+      
+      <div id="loan-comparison-result" class="result-area">
+        <h3>비교 결과</h3>
+        <p>두 대출의 정보를 입력하여 월 상환금과 총 이자를 비교해 보세요.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>대출 비교의 중요성</h2>
+       <p>대출을 받을 때는 금리뿐만 아니라 대출 기간에 따른 총 이자 비용을 고려해야 합니다. 월 납입금이 적더라도 장기적으로 더 많은 이자를 낼 수 있으므로, 꼼꼼하게 비교하는 것이 중요합니다.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETF 적립식 투자 계산기 - 머니칼크</title>
+  <meta name="description" content="매월 일정 금액을 ETF에 적립식으로 투자할 때 미래 자산을 시뮬레이션해 보세요.">
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <script defer src="/assets/js/components.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <main class="container calculator-page">
+    <h1>📊 ETF 적립식 투자 계산기</h1>
+    <p>매월 꾸준히 투자하는 것(적립식 투자)이 장기적으로 어떻게 자산을 불리는지 확인하세요.</p>
+    
+    <div class="calc-container">
+      <form id="etf-form">
+        <div class="input-group">
+          <label for="monthly-investment">매월 투자 금액 (원)</label>
+          <input type="number" id="monthly-investment" placeholder="500000" value="500000">
+        </div>
+        <div class="input-group">
+          <label for="expected-return">연 예상 수익률 (%)</label>
+          <input type="number" id="expected-return" step="0.1" placeholder="8" value="8">
+        </div>
+        <div class="input-group">
+          <label for="investment-period">투자 기간 (년)</label>
+          <input type="number" id="investment-period" placeholder="20" value="20">
+        </div>
+        <button type="submit" class="btn btn-primary">계산하기</button>
+      </form>
+      
+      <div id="etf-result" class="result-area">
+        <h3>계산 결과</h3>
+        <p>왼쪽의 정보를 입력해 주세요.</p>
+      </div>
+    </div>
+    
+    <section class="calc-description">
+       <h2>ETF란 무엇인가요?</h2>
+       <p>상장지수펀드(ETF, Exchange Traded Fund)는 주식처럼 거래소에 상장되어 실시간으로 매매할 수 있는 펀드입니다. S&P500이나 나스닥100 같은 지수를 추종하는 ETF에 장기적으로 적립식 투자를 하면, 개별 주식 리스크를 줄이면서 시장 전체의 성장을 누릴 수 있습니다.</p>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>
